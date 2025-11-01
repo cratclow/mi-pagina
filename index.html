@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salón Beauty Glam</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <img src="imagenes/glam.jpg" alt="Uñas acrílicas" />
+    <h1>Salón Beauty Glam</h1>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main id="inicio">
+    <header>
+      <h2>Bienvenida al Salón Beauty Glam</h2>
+      <p>Especialistas en belleza, cuidado y bienestar</p>
+    </header>
+
+    <section class="servicios">
+  <div class="card">
+    <h3>Uñas</h3>
+    <p>Manicure, gelish, acrílico y más.</p>
+    <section class="galeria">
+      <img src="imagenes/uñas1.jpg" alt="Uñas acrílicas" />
+    </section>
+  </div>
+
+  <div class="card">
+    <h3>Spa</h3>
+    <p>Masajes relajantes y faciales rejuvenecedores.</p>
+    <section class="galeria">
+      <img src="imagenes/facial1.jpg" alt="Masaje facial" />
+    </section>
+  </div>
+
+  <div class="card">
+    <h3>Pestañas</h3>
+    <p>Extensiones, lifting y diseño de cejas.</p>
+    <section class="galeria">
+      <img src="imagenes/pestañas1.jpg" alt="Diseño de pestañas" />
+    </section>
+  </div>
+</section>
+  </main>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required />
+      <label>Teléfono:</label>
+      <input type="tel" name="telefono" required />
+      <label>Mensaje:</label>
+      <textarea name="mensaje" required></textarea>
+      <button type="submit">Enviar por WhatsApp</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
