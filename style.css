@@ -41,9 +41,69 @@ body {
 }
 
 header {
+  display: flex;                  /* Para centrar el contenido */
+  flex-direction: column;         /* Texto en columna */
+  justify-content: center;        /* Centrado vertical */
+  align-items: center;            /* Centrado horizontal */
+  height: 100vh;                  /* Ocupa toda la altura de la pantalla */
   text-align: center;
   padding: 2rem;
-  background: #fce4ec;
+  
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("imagenes/fachada.jpg");  /* Imagen de fondo con capa oscura */
+  background-size: cover;         /* Que cubra todo */
+  background-position: center;    /* Centrada */
+  background-repeat: no-repeat;   /* No se repite */
+  
+  color: white;                   /* Texto en blanco */
+}
+
+/* Título principal */
+header h2 {
+  font-size: clamp(2.5rem, 6vw, 4rem); /* Escala según pantalla */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Subtítulo o descripción */
+header p {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  max-width: 700px;               /* Para que no se extienda demasiado */
+}
+
+/* Estilo del botón */
+.btn-reserva {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #ff4081;   /* Rosa vibrante */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-reserva:hover {
+  background-color: #e73370;   /* Un poco más oscuro al pasar el mouse */
+  transform: scale(1.05);      /* Efecto de zoom */
+}
+
+/* 📱 En móviles (pantallas pequeñas) */
+@media (max-width: 600px) {
+  .btn-reserva {
+    font-size: 1rem;     /* un poco más pequeño */
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* 💻 En pantallas grandes */
+@media (min-width: 1024px) {
+  .btn-reserva {
+    font-size: 1.5rem;   /* más grande y llamativo */
+    padding: 1.2rem 2.5rem;
+  }
 }
 
 .servicios {
