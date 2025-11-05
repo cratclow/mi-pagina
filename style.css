@@ -15,17 +15,17 @@ body {
 }
 
 .navbar img {
-  width: 100px;       /* Ajusta el tamaño del logo */
-  height: 100px;
+  width: 200px;       /* Ajusta el tamaño del logo */
+  height: 200px;
   object-fit: cover; /* Recorta sin deformar */
   border-radius: 50%; /* Opcional: forma circular */
   margin-right: 15px;
 }
 
 .navbar h1 {
-  font-size: 24px;
-  margin: 0;
-  flex-grow: 1;
+  font-size: 50px;
+  margin: 10;
+  flex-grow: 3;
 }
 
 .navbar ul {
